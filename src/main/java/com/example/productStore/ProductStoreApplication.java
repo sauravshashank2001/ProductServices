@@ -112,11 +112,11 @@ public class ProductStoreApplication implements CommandLineRunner {
 //		}
 
 
-		Optional<Category> categoryOptional = categoryRepository.findById("67931294-df89-4094-993f-5179f946b1d4");
-		Category category = categoryOptional.get();
-		System.out.println(category);
-		List<Product> products = category.getProducts();
-		System.out.println(products);
+//		Optional<Category> categoryOptional = categoryRepository.findById("67931294-df89-4094-993f-5179f946b1d4");
+//		Category category = categoryOptional.get();
+//		System.out.println(category);
+//		List<Product> products = category.getProducts();
+//		System.out.println(products);
     }
 
 }

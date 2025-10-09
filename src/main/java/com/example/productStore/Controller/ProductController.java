@@ -32,7 +32,11 @@ public class ProductController {
 
     @GetMapping("/{id}")
     public GenericProductDto getProductById(@PathVariable("id") Long id){
-        return productService.getProductById(id);
+        GenericProductDto genericProductDto = productService.getProductById(id);
+        if(genericProductDto==null){
+            return new GenericProductDto();
+        }
+        return genericProductDto;
     }
 
 
